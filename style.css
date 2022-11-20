@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.mobile-nav-section{
+    display: none;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.left-section{
+    width: 33%;
+    background-image: url('./image/black-girl.jpg');
+    background-size: cover;
+    height: 100%;   
+    background-position: bottom;
+}
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 3rem 0 3rem;
+}
+
+.nav-section{
+    display: flex;  
+    list-style: none;
+    gap: 2rem;
+    justify-content: flex-end;
+}
+
+.nav-section::before {
+    content: "";
+    background: rgb(163, 158, 158);
+    width: 700px;
+    height: 1px;
+    margin-top: 10px;
+}
+
+.second-section{
+    display: flex;
+    margin-top: 4rem;
+}
+
+.outline-text {
+    font-size: 10rem;
+    font-weight: 600;   
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    font-family: "Merriweather", serif;
+}
+
+.normal-text{
+    font-size: 10rem;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    color: rgb(75, 69, 69);
+    margin-left: 10rem;
+    line-height: 0.7;
+}
+
+.small-heading-text{
+    margin-top: auto;
+    margin-left: 2rem;
+    color: rgb(121, 112, 112);
+    font-size: 2rem;
+}
+
+.social-link-section{
+    margin-left: auto;
+}
+
+.social-link-section i{
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+.third-section{
+    margin-top: 2rem;
+    margin-left: auto;
+}
+
+.checkout-btn{
+    width: 400px;
+    color: white;
+    background: rgb(75, 69, 69);
+    font-size: 20px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border: none;
+}
+
+.fourth-section{
+    display: flex;
+}
+
+.list-item{
+    padding: 1rem 0;
+    font-size: 20px;
+    color: gray;
+}
+
+.list-item:first-child{
+    color: rgb(75, 69, 69);
+    padding-top: 0;
+}
+
+.list{
+    padding-left: 2rem;
+    margin-top: 4rem;
+}
+
+.list-item span{
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: rgb(75, 69, 69);
+    margin-right: 2rem;
+}
+  
+.list-item span::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background:rgb(75, 69, 69);
+    left: 4px;
+    width: 1.5px;
+    height: 60px;
+}
+
+.quote-section{
+    width: 40%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.quote-section i{
+    font-size: 4rem;
+}
+
+.quote-section p{
+    margin: 1rem 0;
+}
+
+.quote-section img{
+    width: 400px;
+}
+
+.arrow img{
+    width: 10%;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+@media screen and (max-width:1200px) {
+    .container{
+        flex-direction: column;
+        height: max-content; 
+        width: max-content;
+    } 
+    .left-section{
+        width: 100%;
+        height: 800px;
+        background-size: cover;
+        background-position: center;
+    }
+    .arrow img{ 
+        bottom: -800px;     
+    }
+}
+
+@media screen and (max-width:567px) {
+
+    .mobile-nav-section{
+        display: block;
+    }
+
+    .mobile-nav-section ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .mobile-nav-section ul li{
+        font-size: 1.5rem;
+    }
+
+   .nav-section{
+        display: none;
+   }
+
+   .checkout-btn{
+        margin: 2rem 0;
+   }
+
+   .second-section{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1rem;
+   }
+
+   .outline-text {
+        font-size: 8rem;
+    }
+
+    .normal-text{
+        font-size: 8rem;
+    }
+
+    .small-heading-text{
+        margin-top: 5rem;
+        margin-left: 0;
+    }
+
+    .social-link-section{
+        margin: 2.5rem auto;
+    }
+
+    .social-link-section div{
+        display: inline-block;
+    }
+
+    .social-link-section i{
+        font-size: 2rem;
+        margin: 1.5rem;
+    }
+
+    .arrow{
+        display: none;
+    }
+
+    .third-section{
+        margin: auto;
+    }
+    
+    .checkout-btn{
+        width: 400px;
+    }
+
+    .fourth-section{
+        flex-direction: column;
+    }
+
+    .list{
+        margin: 3rem auto;
+    }
+
+    .quote-section{
+        margin: 3rem auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .heading{
+        position: absolute;
+        top: 660px;
+        color: white;
+    }
+}
+ 
